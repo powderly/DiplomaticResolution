@@ -1,11 +1,18 @@
-InstagramStatTools
+Instagram data tools
 ==================
 
-R scripts and datasets to enable collaborators to analyse, visualize and contribute to "A Diplomatic Resolution", as artwork currently installed in the Korean Pavilion at the 2014 Venice Biennale. The artwork is an aggregation, analysis and visualization of data associated with photos uploaded to Instagram from within North Korea
+These repo contains Research in progress, R scripts and datasets related to the project "Diplomatic Resolution". These tools are herein contained in order to enable project collaborators and the public to analyse, visualize and contribute to the artwork, which is currently installed in the Golden Lion-winning Korean Pavilion, "Crow's Eye View", at the 14th International Architecture Exhibition la Biennale di Venezia. The artwork is aggregates photos that have been directly uploaded to Instagram from within the DPRK. The photo metadata is also aggregated in the form of multiple JSON data sets and is cleaned and tidy'd for analysis and visualization.
 
-codepen[omLdc][350][js][6592]
+Diplomatic Resolution, 2014 Artist Statement
+=====================
 
-``` html
-<p data-height="266" data-theme-id="6592" data-slug-hash="omLdc" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/powderly/pen/omLdc/'>Location-Based Gallery</a> by james powderly (<a href='http://codepen.io/powderly'>@powderly</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-```
+In Late 2012, the government of the Democratic People's Republic of Korea, quietly and without ceremony, opened the Koryo Link 3G cellular network to foreign tourists and journalists, allowing a small crack to form in the decades-old curtain of exclusively state-controlled media. While the majority of North Korean nationals are still restricted to using only the “walled garden” of the Kwangmyong intranet, and authorized access to the global internet is predominantly in the service of government propaganda, this modest respite has resulted in the appearance of digital images uploaded directly from north of the 38th parallel to the photo-sharing social network Instagram.
+
+This sudden emergence of relatively uncensored imagery from inside the most secluded and poorly understood country on Earth is a remarkable phenomenon in and of itself. It is a first encounter for a larger audience to the faces and culture of North Koreans, and a window into what Philipp Meuser calls, “the world’s best-preserved open-air museum of socialist architecture.” But, the combination of the faux-retro, augmented reality of Instagram's filters and these first glimpses of the orchestrated emptiness of the streets of Pyongyang, the prefab, plattenbau facades of sky-rise apartments, the surreal spectacles of Juche ideology, and the all-to-familiar faces of people in the course of everyday life invite the artist and audience to interrogate the reality of their moody drama and their authenticity.
+
+"A Diplomatic Resolution" is research-in-action. It is a collection of all the photos on Instagram uploaded directly from inside the DPRK and organized by date of upload. Metadata about these photos -- their tags, filters, comments, longitude and latitude, etc -- have been collected and are publicly available on Github. As part of the Golden Lion-winning Korean National Pavilion, "Crow's Eye View", at the 14th International Architecture Exhibition la Biennale di Venezia, a list of artists and cultural producers have been invited to research, interpret and analyze this data to create data studies and visuals that will be included, amongst the photos, throughout the duration of the Biennale (June 6th ~ Nov 23rd).
+
+Each of these photo, tainted as they are by the saturated "Hefe", washed out "Optimist" or sepia-toned "Earlybird" story telling of the Instagram software, the frame of the photographer, the bias of the analyst and, especially, our own expectations, captures a millisecond of witness to what AP photographer David Guttenfeld describes as “something worth trying to understand in North Korea.” And access to this data represents an important moment in the history of technology, global culture and the Korean Peninsula.
+
+Credits: James Powderly, Jihoi Lee, Minsuk Cho, Betty Kim, Mass Studies, photos courtesy of the Instagram API. © CopyLeft 2014 Wikipowdia.com. No Rights Reserved.
+
