@@ -25,7 +25,7 @@ The Instagram V1 API is a RESTful API that allows the user to access Instagram's
 
 The following table illustrates the basic structure of the Instagram API response and how the data was unpacked from the nested JSON value pairs and massaged into a data.frame in R
 
-| Instagram JSON Envelope | Labels | Nested Pairs | Nested Pairs | Nested Pairs |  Master Data Frame Labels | Nested Values | 
+| OLD Instagram JSON Envelope | OLD Labels | OLD Nested Pairs | OLD Nested Pairs | OLD Nested Pairs | NEW Master Data Frame Labels | NEW Nested Values | 
 | --- | --------- |                    ---|              --- |       --- |                               ---| ---            | 
 | meta|           |                       |                  |           |                                  | |
 |    | code      |                       |                  |           |                                   | |
