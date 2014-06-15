@@ -3,6 +3,8 @@
 
 These repo contains Research in progress, R scripts and datasets related to the project "Diplomatic Resolution". These tools are herein contained in order to enable project collaborators and the public to analyse, visualize and contribute to the artwork, which is currently installed in the Golden Lion-winning Korean Pavilion, "Crow's Eye View", at the 14th International Architecture Exhibition la Biennale di Venezia. The artwork is aggregates photos that have been directly uploaded to Instagram from within the DPRK. The photo metadata is also aggregated in the form of multiple JSON data sets and is cleaned and tidy'd for analysis and visualization.
 
+
+[diplomatic resolution cover photo](http://wikipowdia.org/images/logo/diplomaticresolution.jpg)
 ## Diplomatic Resolution, 2014 Artist Statement
 
 
