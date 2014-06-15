@@ -34,4 +34,57 @@ The Instagram V1 API is a RESTful API that allows the user to access Instagram's
 
 The following table illustrates the basic structure of the Instagram API response and how the data was unpacked from the nested JSON value pairs and massaged into a data.frame in R
 
+Instagram JSON Response Dataset | Reformated, wide-format, Master Data Frame
+data|	tags |								                        | tags	
+	| location	| latitude							                | location_lattitude	
+			   || name					    		                | location_name	
+			   || longitude					        		        | location_longitude	
+		       || id												| location_id	
+	| comments	| count										 		| comments_count	
+	|	data	| created_time								 		| comments_data							 | created_time
+			   || text												 										|| text
+			   || from	| username																			|| from_username
+				      ||| profile_picture																	|| from_profile_picture
+					  ||| id																				|| rom_id
+					  ||| full_name																			|| from_full_name
+			   || id																						|| comment_id
+	| filter														| filter	
+	| created_time													| created_time	
+	| link															| link	
+	| likes	    |count												| likes_count	
+			   ||data   | username									| likes_data								 | username
+					  ||| profile_picture																	|| profile_picture
+					  ||| id																				|| id
+					  ||| full_name																			|| full_name
+	| images	| low_resolution 	    | url						| image_low_resolution_url	
+			   					       || width						| image_low_resolution_width	
+			   		   			       || height					| image_low_resolution_height	
+			   || Thumbnail		       || url						| image_thumnbail_resolution_url	
+								       || width						| image_thumnbail_resolution_width	
+								       || height					| image_thumnbail_resolution_height	
+			   || standard_resolution	| url						| image_standard_resolution_url	
+								       || width						| image_standard_resolution_width	
+									   || height					| image_standard_resolution_height	
+	| users_in_photo_username           | user		| username		| users_in_photo						 |	users_in_photo_username
+									   			  ||| full_name								 				|| users_in_photo_full_name
+			                           			  ||| id													|| users_in_photo_id
+												  ||| profile_picture										|| users_in_photo_profile_picture
+									   || position	| x														|| users_in_photo_x_position
+												  ||| y														|| users_in_photo_y_position
+	| caption || created_time										| caption_created_time	
+		      || text												| caption_created_text	
+		      || from	  | username								| caption_from_username	
+						||| profile_photo							| caption_from_profile_photo	
+						||| id										| caption_from_id	
+						||| full_name								| caption_from_full_name	
+			 			||| id										| caption_id	
+	| type							
+	| id					
+	| user  | username												| user_username	
+		   || website												| user_website	
+		   || profile_pictures										| user_profile_picture	
+		   || full_names											| user_full_names	
+		   || bio													| user_bio	
+		   || id													| user_id	
+								
 
