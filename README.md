@@ -26,7 +26,7 @@ The Instagram V1 API is a RESTful API that allows the user to access Instagram's
 The following table illustrates the basic structure of the Instagram API response and how the data was unpacked from the nested JSON value pairs and massaged into a data.frame in R
 
 Instagram JSON Response Dataset |      ||                  |           | Reformated, wide-format, Master Data Frame |
---- | --------- |                    ---|              --- |       --- |                                 ---|
+--- | --------- |                    ---|              --- |       --- |                                         ---| ---   
 meta|           |                       |                  |           |                                    |
     | code      |                       |                  |           |                                    | 
     |           |                       |                  |           |                                    |     
