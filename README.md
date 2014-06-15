@@ -6,16 +6,7 @@ This repo contains Research in progress: Scripts and sets collected to enable th
 ![diplomatic resolution cover photo](http://wikipowdia.org/images/logo/diplomaticresolution.jpg)
 ## Diplomatic Resolution, 2014 Artist Statement
 
-
-In Late 2012, the government of the Democratic People's Republic of Korea, quietly and without ceremony, opened the Koryo Link 3G cellular network to foreign tourists and journalists, allowing a small crack to form in the decades-old curtain of exclusively state-controlled media. While the majority of North Korean nationals are still restricted to using only the “walled garden” of the *Kwangmyong* intranet, and authorized access to the global internet is predominantly in the service of government propaganda, this modest respite has resulted in the appearance of digital images uploaded directly from north of the 38th parallel to the photo-sharing social network [Instagram](http://instagram.com/#).
-
-This sudden emergence of relatively uncensored imagery from inside the most secluded and poorly understood country on Earth is a remarkable phenomenon in and of itself. It is a first encounter for a larger audience to the faces and culture of North Koreans, and a window into what Philipp Meuser calls, “the world’s best-preserved open-air museum of socialist architecture.” But, the combination of the faux-retro, augmented reality of Instagram's filters and these first glimpses of the orchestrated emptiness of the streets of Pyongyang, the prefab, *plattenbau* facades of sky-rise apartments, the surreal spectacles of *Juche* ideology, and the all-to-familiar faces of people in the course of everyday life invite the artist and audience to interrogate the reality of their moody drama and their authenticity.
-
-**"A Diplomatic Resolution" is research-in-action. It is a collection of all the photos on Instagram uploaded directly from inside the DPRK and organized by date of upload. Metadata about these photos -- their tags, filters, comments, longitude and latitude, etc -- have been collected and are publicly available on Github.** As part of the Golden Lion-winning Korean National Pavilion, ["Crow's Eye View"](http://www.korean-pavilion.or.kr/14pavilion/index.html), at the [*14th International Architecture Exhibition la Biennale di Venezia*](http://www.labiennale.org/en/architecture/news/07-06.html), a list of artists and cultural producers have been invited to research, interpret and analyze this data to create data studies and visuals that will be included, amongst the photos, throughout the duration of the Biennale (June 6th ~ Nov 23rd).
-
-Each of these photo, tainted as they are by the saturated "Hefe", washed out "Optimist" or sepia-toned "Earlybird" story telling of the Instagram software, the frame of the photographer, the bias of the analyst and, especially, our own expectations, captures a millisecond of witness to what AP photographer David Guttenfeld describes as “something worth trying to understand in North Korea.” And access to this data represents an important moment in the history of technology, global culture and the Korean Peninsula.
-
-Credits: James Powderly, Jihoi Lee, Minsuk Cho, Betty Kim, [Mass Studies](http://www.massstudies.com/), photos courtesy of the Instagram API. © CopyLeft 2014 [Wikipowdia.org.](http://wikipowdia.org) No Rights Reserved.
+[Jump to "A Diplomatic Resolution"](http://wikipowdia.org/diplomaticresolution)
 
 ## THE DATA AND CODE
 
@@ -34,8 +25,14 @@ The Instagram V1 API is a RESTful API that allows the user to access Instagram's
 
 The following table illustrates the basic structure of the Instagram API response and how the data was unpacked from the nested JSON value pairs and massaged into a data.frame in R
 
-Instagram JSON Response Dataset |      ||                  |           | Reformated, wide-format, Master Data Frame
+Instagram JSON Response Dataset |      ||                  |           | Reformated, wide-format, Master Data Frame |
 --- | --------- |                    ---|              --- |       --- |                                 ---|
+meta|           |                       |                  |           |                                    |
+    | code      |                       |                  |           |                                    | 
+    |           |                       |                  |           |                                    |     
+pagination | next_url |                 |                  |           |                                    | 
+    | next_max_id |                     |                  |           |                                    | 
+    |           |                       |                  |           |                                    | 
 data|	tags 	|						|	               |           | tags	
 	| location	| latitude				|                  |	       | location_lattitude	
     |           | name					|    		       |           | location_name	
