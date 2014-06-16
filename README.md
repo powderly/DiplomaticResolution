@@ -86,3 +86,69 @@ The following table illustrates the basic structure of the Instagram API respons
 |	|	        | id					|				   |		   | user_id	||
 								
 
+|master tidy data frame labels					| variables
+|---										|---					|
+|tags											|											|
+|location_lattitude|											|
+|location_name|											|
+|location_longitude|											|
+|location_id        |        											|
+|comments_count		|											|
+|comments_data|											|
+|filter		|											|
+|created_time|													|
+|link		|											|
+|likes_count|													|
+|likes_data ## like data here|											|
+|image_low_resolution_url	|												|
+|image_low_resolution_width	|												|
+|image_low_resolution_height|													|
+|image_thumnbail_resolution_url|												|	
+|image_thumnbail_resolution_width|													|
+|image_thumnbail_resolution_height|													|
+|image_standard_resolution_url		|											|
+|image_standard_resolution_width	|												|
+|image_standard_resolution_height	|												|
+|users_in_photo	## users in photo data here|											|
+|caption_created_time		|											|
+|caption_created_text		|											|
+|caption_from_username		|											|
+|caption_from_profile_photo	|												|
+|caption_from_id		|											|
+|caption_from_full_name	|												|
+|caption_id		|											|
+|type		|											|
+|id		|											|
+|user_username|													|
+|user_website	|												|
+|user_profile_picture		|											|
+|user_full_names		|											|
+|user_bio		|											|
+|user_id	|											|
+
+|comments data frame 				|		variables					|
+|---								|------						|		
+|created_time        | 											|
+|text	|											|
+|from_username|												|
+|from_profile_picture|											|
+|from_id	|											|
+|from_full_name|											|	
+|comment_id|											|
+
+|likes data frame|								 variables|
+|--- |---
+|username	|											|
+|profile_picture	|											|
+|id |											|
+|full_name|												|
+	
+|users in photo data frame|			|	variables							|
+|--- 								|---							|
+|users_in_photo_username|											|
+|users_in_photo_full_name|											|	
+|users_in_photo_id|											|
+|users_in_photo_profile_picture|											|
+|users_in_photo_x_position|											|
+|users_in_photo_y_position|												|
+
