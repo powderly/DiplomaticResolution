@@ -26,68 +26,70 @@ The Instagram V1 API is a RESTful API that allows the user to access Instagram's
 The following table illustrates the basic structure of the Instagram API response and how the data was unpacked from the nested JSON value pairs and massaged into a data.frame in R
 
 | OLD Instagram JSON Envelope | OLD Labels | OLD Nested Pairs | OLD Nested Pairs | OLD Nested Pairs | NEW Master Data Frame Labels | NEW Nested Values | 
-| --- | --------- |                    ---|              --- |       --- |                               ---| ---            | 
-| meta|           |                       |                  |           |                                  | |
-|    | code      |                       |                  |           |                                   | |
-|    |           |                       |                  |           |                                   |  |   
-| pagination | next_url |                 |                  |           |                                  | |
-|    | next_max_id |                     |                  |           |                                   | |
-|    |           |                       |                  |           |                                   | |
-|data|	tags 	|						|	               |           | tags								| |
-|	| location	| latitude				|                  |	       | location_lattitude					||
-|    |           | name					|    		       |           | location_name						||
-|	|		    | longitude				|		           |	       | location_longitude					||	
-|	|     	    | id					|				   |		   | location_id						||
-|	| comments	| count					|				   | 	 	   | comments_count						||
-|	|	data	| created_time			|				   |	 	   | comments_data						| created_time |
-|    |           | text					|				   |		   |						 			| text |
-|    |           | from	                | username		   |		   |									| from_username |
-|	|			|                       | profile_picture  |		   |									| from_profile_picture |
-|	|			|	                    | id			   |		   |									| rom_id |
-|	|			|	                    | full_name		   |		   |									| from_full_name |
-|	|		    | id					|				   | 		   |									| comment_id |
-|	| filter	|						|				   |		   | filter	                            |
-|	| created_time |                    |				   |		   | created_time	|
-|	| link		|						|			       |		   | link	|
-|	| likes	    | count					|				   |		   | likes_count	 |
-|   |           | data                  | username		   |		   | likes_data							| username |
-|	|			|	                    | profile_picture  |		   |									| profile_picture |
-|	|			|	                    | id			   |		   |								    | id |
-|	|  			|                 	    | full_name		   |		   | 								    | full_name |
-|	| images	| low_resolution 	    | url			   |		   | image_low_resolution_url	|
-|	|		    |					    | width			   |		   | image_low_resolution_width	|			   		   			    
-|	|		   	|	   			        | height	       |		   | image_low_resolution_height |	
-|	|		    | Thumbnail		        | url			   |		   | image_thumnbail_resolution_url |	
-|	|			|				        | width			   |		   | image_thumnbail_resolution_width  |	
-|	|			|				        | height		   |		   | image_thumnbail_resolution_height	|
-|	|		  	| standard_resolution	| url			   |		   | image_standard_resolution_url	|
-|	|			|				        | width			   |		   | image_standard_resolution_width   |	
-|	|			|					    | height		   |		   | image_standard_resolution_height	|
-|	| users_in_photo | users		    | username	       |		   | users_in_photo						| users_in_photo_username |
-|	|			|					    | full_name		   |		   |				 					| users_in_photo_full_name |
-|	|		    |                       | id			   | 		   | 									| users_in_photo_id |
-|	|			|				        | profile_picture  |		   | 									| users_in_photo_profile_picture |
-|	|			| 						| position	       | x		   |									| users_in_photo_x_position |
-|	|			|					    |                  | y		   |									| users_in_photo_y_position |
-|	| caption   | created_time		    |	               |       	   | caption_created_time	|
-|	|	        | text					|				   |		   | caption_created_text	|
-|	|	        | from	                | username		   |		   | caption_from_username	|
-|	|			|		                | profile_photo	   |		   | caption_from_profile_photo	  |
-|	|			|	                    | id			   |		   | caption_from_id	|
-|	|			|	             	    | full_name		   |		   | caption_from_full_name  |	
-|	|		 	|		                | id			   |		   | caption_id	  |
-|	| type		|					    |                  | 		   | ||
-|	| id		|				        |                  |           | ||
-|	| user      | username				|				   |		   | user_username	||
-|	|	        | website				|				   |		   | user_website	||
-|	|	        | profile_pictures		|				   |		   | user_profile_picture ||	
-|	|	        | full_names			|				   |		   | user_full_names	||
-|	|	        | bio					|				   |		   | user_bio	||
-|	|	        | id					|				   |		   | user_id	||
-|	| attribution|						|					|		   |	"discared" ||						
+| --- | --------- |                    ---|              --- |       --- |---|                               ---| ---            | 
+| meta|           |                       |                  |           |    |  "discared"                             | |
+|    | code      |                       |                  |           |    |  "discared"                              | |
+|    |           |                       |                  |           |   |  "discared"                               |  |   
+| pagination | next_url |                 |                  |           | |   "discared"                               | |
+|    | next_max_id |                     |                  |           | |   "discared"                                | |
+|    |           |                       |                  |           ||    "discared"                                | |
+|data|	tags 	|						|	               |           | -->   |tags								| |
+|	| location	| latitude				|                  |	       | -->   |location_lattitude					||
+|    |           | name					|    		       |           | -->   |location_name						||
+|	|		    | longitude				|		           |	       | -->   |location_longitude					||	
+|	|     	    | id					|				   |		   | -->   |location_id						||
+|	| comments	| count					|				   | 	 	   | -->   |comments_count						||
+|	|	data	| created_time			|				   |	 	   | -->   |comments_data						| created_time |
+|    |           | text					|				   |		   |-->   |						 			| text |
+|    |           | from	                | username		   |		   |-->   |									| from_username |
+|	|			|                       | profile_picture  |		   |-->   |									| from_profile_picture |
+|	|			|	                    | id			   |		   |-->   |									| rom_id |
+|	|			|	                    | full_name		   |		   |-->   |									| from_full_name |
+|	|		    | id					|				   | 		   |-->   |									| comment_id |
+|	| filter	|						|				   |		   | -->   |filter	                            |
+|	| created_time |                    |				   |		   | -->   |created_time	|
+|	| link		|						|			       |		   | -->   |link	|
+|	| likes	    | count					|				   |		   | -->   |likes_count	 |
+|   |           | data                  | username		   |		   | -->   |likes_data							| username |
+|	|			|	                    | profile_picture  |		   |-->   |									| profile_picture |
+|	|			|	                    | id			   |		   |-->   |								    | id |
+|	|  			|                 	    | full_name		   |		   | -->   |								    | full_name |
+|	| images	| low_resolution 	    | url			   |		   | -->   |image_low_resolution_url	|
+|	|		    |					    | width			   |		   | -->   |image_low_resolution_width	|			   		   			    
+|	|		   	|	   			        | height	       |		   | -->   |image_low_resolution_height |	
+|	|		    | Thumbnail		        | url			   |		   | -->   |image_thumnbail_resolution_url |	
+|	|			|				        | width			   |		   | -->   |image_thumnbail_resolution_width  |	
+|	|			|				        | height		   |		   | -->   |image_thumnbail_resolution_height	|
+|	|		  	| standard_resolution	| url			   |		   | -->   |image_standard_resolution_url	|
+|	|			|				        | width			   |		   | -->   |image_standard_resolution_width   |	
+|	|			|					    | height		   |		   | -->   |image_standard_resolution_height	|
+|	| users_in_photo | users		    | username	       |		   | -->   |users_in_photo						| users_in_photo_username |
+|	|			|					    | full_name		   |		   |-->   |				 					| users_in_photo_full_name |
+|	|		    |                       | id			   | 		   | -->   |									| users_in_photo_id |
+|	|			|				        | profile_picture  |		   | -->   |									| users_in_photo_profile_picture |
+|	|			| 						| position	       | x		   |-->   |									| users_in_photo_x_position |
+|	|			|					    |                  | y		   |-->   |									| users_in_photo_y_position |
+|	| caption   | created_time		    |	               |       	   | -->   |caption_created_time	|
+|	|	        | text					|				   |		   | -->   |caption_created_text	|
+|	|	        | from	                | username		   |		   | -->   |caption_from_username	|
+|	|			|		                | profile_photo	   |		   | -->   |caption_from_profile_photo	  |
+|	|			|	                    | id			   |		   | -->   |caption_from_id	|
+|	|			|	             	    | full_name		   |		   | -->   |caption_from_full_name  |	
+|	|		 	|		                | id			   |		   | -->   |caption_id	  |
+|	| type		|					    |                  | 		   | -->   |||
+|	| id		|				        |                  |           | -->   |||
+|	| user      | username				|				   |		   | -->   |user_username	||
+|	|	        | website				|				   |		   | -->   |user_website	||
+|	|	        | profile_pictures		|				   |		   | -->   |user_profile_picture ||	
+|	|	        | full_names			|				   |		   | -->   |user_full_names	||
+|	|	        | bio					|				   |		   | -->   |user_bio	||
+|	|	        | id					|				   |		   | -->   |user_id	||
+|	| attribution|						|					|		   |-->   |	"discared" ||						
 
 
 ### Master Data Frame label -> Variable Codebook
+
+The master data frame has 34 character class variables and 3 data frames
 |master tidy data frame labels |  class					| variables|
 |---						   |---				|---					|
 |tags							|				|	photo hashtags										|
@@ -102,13 +104,13 @@ The following table illustrates the basic structure of the Instagram API respons
 |link		|											| link to the instagram page|
 |likes_count|													| number of likes|
 |likes_data ## like data here|								data.frame			| like data.frame|
-|image_low_resolution_url	|												|  306 x 306 image|
+|image_low_resolution_url	|												|  306 x 306 image url|
 |image_low_resolution_width	|												| 306 pixels|
 |image_low_resolution_height|													| 306 pixels|
-|image_thumnbail_resolution_url|												|	150 x 150 pixel image| 
+|image_thumnbail_resolution_url|												|	150 x 150 pixel image url| 
 |image_thumnbail_resolution_width|													| 150 pixels|
 |image_thumnbail_resolution_height|													| 150 pixels|
-|image_standard_resolution_url		|											| 640 x 640 image| 
+|image_standard_resolution_url		|											| 640 x 640 image url| 
 |image_standard_resolution_width	|												| 640 pixels|
 |image_standard_resolution_height	|												| 640 pixels|
 |users_in_photo	## users in photo data here|				data. frame							| users in the photo data.frame|
@@ -133,7 +135,7 @@ The following table illustrates the basic structure of the Instagram API respons
 |created_time        | 			comment creation time								|
 |text	|						the text of the comment					|
 |from_username|					comment contributor username							|
-|from_profile_picture|		    comment contributorpic									|
+|from_profile_picture|		    comment contributor pic url									|
 |from_id	|					comment contributor id				 		|
 |from_full_name|				comment contributor full name							|	
 |comment_id|					comment event id						|
@@ -141,7 +143,7 @@ The following table illustrates the basic structure of the Instagram API respons
 |likes data frame|								 variables|
 |--- |--- |
 |username	|		the like contributor								|
-|profile_picture	|				the like contributor pic							|
+|profile_picture	|				the like contributor pic url							|
 |id |								the like contributor ID		|
 |full_name |						full name of the like contributor						|
 	
@@ -150,7 +152,7 @@ The following table illustrates the basic structure of the Instagram API respons
 |users_in_photo_username|			a user tagged in the photo								|
 |users_in_photo_full_name|			the full name of a user tagged in photo								|	
 |users_in_photo_id|					the id of a user tagged in photo						|
-|users_in_photo_profile_picture|	a pic of the user  tagged in photo										|
+|users_in_photo_profile_picture|	a pic of the user  tagged in photo url										|
 |users_in_photo_x_position|			the x position of the user tagged in photo						|
 |users_in_photo_y_position|			the y position of the user tagged in photo									|
 
