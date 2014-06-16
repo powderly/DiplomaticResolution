@@ -84,71 +84,71 @@ The following table illustrates the basic structure of the Instagram API respons
 |	|	        | full_names			|				   |		   | user_full_names	||
 |	|	        | bio					|				   |		   | user_bio	||
 |	|	        | id					|				   |		   | user_id	||
-								
+|	| attribution|						|					|		   |	"discared" ||						
 
-|master tidy data frame labels					| variables
-|---										|---					|
-|tags											|											|
-|location_lattitude|											|
-|location_name|											|
-|location_longitude|											|
-|location_id        |        											|
-|comments_count		|											|
-|comments_data|											|
-|filter		|											|
-|created_time|													|
-|link		|											|
-|likes_count|													|
-|likes_data ## like data here|											|
-|image_low_resolution_url	|												|
-|image_low_resolution_width	|												|
-|image_low_resolution_height|													|
-|image_thumnbail_resolution_url|												|	
-|image_thumnbail_resolution_width|													|
-|image_thumnbail_resolution_height|													|
-|image_standard_resolution_url		|											|
-|image_standard_resolution_width	|												|
-|image_standard_resolution_height	|												|
-|users_in_photo	## users in photo data here|											|
-|caption_created_time		|											|
-|caption_created_text		|											|
-|caption_from_username		|											|
-|caption_from_profile_photo	|												|
-|caption_from_id		|											|
-|caption_from_full_name	|												|
-|caption_id		|											|
-|type		|											|
-|id		|											|
-|user_username|													|
-|user_website	|												|
-|user_profile_picture		|											|
-|user_full_names		|											|
-|user_bio		|											|
-|user_id	|											|
+|master tidy data frame labels |  class					| variables
+|---						   ---|				|---					|
+|tags											|	photo hashtags										|
+|location_lattitude|											| lat
+|location_name|											| location name using facebook/foursquare API |
+|location_longitude|											| long|
+|location_id        |        											| location ID on facebook/foursquare API|
+|comments_count		|											| number of comments|
+|comments_data|								data.frame			| comments data.frame (see below)| 
+|filter		|											| the type of instagram photo filter effect|
+|created_time|													| when the photo was uploaded|
+|link		|											| link to the instagram page|
+|likes_count|													| number of likes|
+|likes_data ## like data here|								data.frame			| like data.frame|
+|image_low_resolution_url	|												|  306 x 306 image|
+|image_low_resolution_width	|												| 306 pixels|
+|image_low_resolution_height|													| 306 pixels|
+|image_thumnbail_resolution_url|												|	150 x 150 pixel image| 
+|image_thumnbail_resolution_width|													| 150 pixels|
+|image_thumnbail_resolution_height|													| 150 pixels|
+|image_standard_resolution_url		|											| 640 x 640 image| 
+|image_standard_resolution_width	|												| 640 pixels|
+|image_standard_resolution_height	|												| 640 pixels|
+|users_in_photo	## users in photo data here|				data. frame							| users in the photo data.frame|
+|caption_created_time		|											| caption created time |
+|caption_created_text		|											| the caption text| 
+|caption_from_username		|											| caption attribution username |
+|caption_from_profile_photo	|												| caption attribution profile photo |
+|caption_from_id		|											| caption attribution by full name |
+|caption_from_full_name	|												| caption attribution by id |
+|caption_id		|											| event id of the caption |
+|type		|											| type of media vid or photo |
+|id		|											| id of the uploaded |
+|user_username|													|  username of the uploader |
+|user_website	|												|  website of the uploader|
+|user_profile_picture		|											| profile pic of the uploader|
+|user_full_names		|											| full name of thge uploader|
+|user_bio		|											| bio of the uploader|
+|user_id	|											| id of the uploader|
 
 |comments data frame 				|		variables					|
 |---								|------						|		
-|created_time        | 											|
-|text	|											|
-|from_username|												|
-|from_profile_picture|											|
-|from_id	|											|
-|from_full_name|											|	
-|comment_id|											|
+|created_time        | 			comment creation time								|
+|text	|						the text of the comment					|
+|from_username|					attribution 							|
+|from_profile_picture|		    attribution pic									|
+|from_id	|					attribution id				 		|
+|from_full_name|				attribution full name							|	
+|comment_id|					comment event id						|
 
 |likes data frame|								 variables|
-|--- |---
-|username	|											|
-|profile_picture	|											|
-|id |											|
-|full_name|												|
+|--- |--- |
+|username	|		username of liker									|
+|profile_picture	|				 pic of liker							|
+|id |								id of liker			|
+|full_name |						full name of liker						|
 	
 |users in photo data frame|			|	variables							|
 |--- 								|---							|
-|users_in_photo_username|											|
-|users_in_photo_full_name|											|	
-|users_in_photo_id|											|
-|users_in_photo_profile_picture|											|
-|users_in_photo_x_position|											|
-|users_in_photo_y_position|												|
+|users_in_photo_username|			a user in the photo								|
+|users_in_photo_full_name|			user in photo full name								|	
+|users_in_photo_id|					user in photo id						|
+|users_in_photo_profile_picture|	user in photo pic										|
+|users_in_photo_x_position|			user in photo x pos								|
+|users_in_photo_y_position|			user in photo y pos									|
 
