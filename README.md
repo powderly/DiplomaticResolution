@@ -89,7 +89,8 @@ The following table illustrates the basic structure of the Instagram API respons
 
 ### Master Data Frame label -> Variable Codebook
 
-The master data frame has 34 character class variables and 3 data frames
+##### The master data frame has 34 character class variables and 3 data frames
+
 |master tidy data frame labels |  class					| variables|
 |---						   |---				|---					|
 |tags							|				|	photo hashtags										|
