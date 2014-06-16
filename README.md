@@ -86,8 +86,10 @@ The following table illustrates the basic structure of the Instagram API respons
 |	|	        | id					|				   |		   | user_id	||
 |	| attribution|						|					|		   |	"discared" ||						
 
-|master tidy data frame labels |  class					| variables
-|---						   ---|				|---					|
+
+### Master Data Frame label -> Variable Codebook
+|master tidy data frame labels |  class					| variables|
+|---						   |---				|---					|
 |tags											|	photo hashtags										|
 |location_lattitude|											| lat
 |location_name|											| location name using facebook/foursquare API |
