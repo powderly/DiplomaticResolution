@@ -89,7 +89,7 @@ The following table illustrates the basic structure of the Instagram API respons
 
 ### Master Data Frame label -> Variable Codebook
 
-##### The master data frame has 34 character class variables and 3 data frames
+##### The master data frame has 34 character class variables and 3 data frames per observation
 
 |master tidy data frame labels |  class					| variables|
 |---						   |---				|---					|
@@ -131,6 +131,8 @@ The following table illustrates the basic structure of the Instagram API respons
 |user_bio		|											| bio of the uploader|
 |user_id	|											| id of the uploader|
 
+##### The comments data frame has 7 character class variables per event
+
 |comments data frame 				|		variables					|
 |---								|------						|		
 |created_time        | 			comment creation time								|
@@ -141,6 +143,8 @@ The following table illustrates the basic structure of the Instagram API respons
 |from_full_name|				comment contributor full name							|	
 |comment_id|					comment event id						|
 
+##### The comments data frame has 4 character class variables per event
+
 |likes data frame|								 variables|
 |--- |--- |
 |username	|		the like contributor								|
@@ -148,6 +152,8 @@ The following table illustrates the basic structure of the Instagram API respons
 |id |								the like contributor ID		|
 |full_name |						full name of the like contributor						|
 	
+##### The comments data frame has 6 character class variables per event
+
 |users in photo data frame		|	variables							|
 |--- 								|---							|
 |users_in_photo_username|			a user tagged in the photo								|
