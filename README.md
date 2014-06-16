@@ -90,7 +90,7 @@ The following table illustrates the basic structure of the Instagram API respons
 ### Master Data Frame label -> Variable Codebook
 |master tidy data frame labels |  class					| variables|
 |---						   |---				|---					|
-|tags											|	photo hashtags										|
+|tags							|				|	photo hashtags										|
 |location_lattitude|											| lat
 |location_name|											| location name using facebook/foursquare API |
 |location_longitude|											| long|
@@ -114,10 +114,10 @@ The following table illustrates the basic structure of the Instagram API respons
 |users_in_photo	## users in photo data here|				data. frame							| users in the photo data.frame|
 |caption_created_time		|											| caption created time |
 |caption_created_text		|											| the caption text| 
-|caption_from_username		|											| caption attribution username |
-|caption_from_profile_photo	|												| caption attribution profile photo |
-|caption_from_id		|											| caption attribution by full name |
-|caption_from_full_name	|												| caption attribution by id |
+|caption_from_username		|											| caption contributor username |
+|caption_from_profile_photo	|												| caption contributor profile photo |
+|caption_from_id		|											| caption contributor by full name |
+|caption_from_full_name	|												| caption contributor by id |
 |caption_id		|											| event id of the caption |
 |type		|											| type of media vid or photo |
 |id		|											| id of the uploaded |
@@ -132,25 +132,25 @@ The following table illustrates the basic structure of the Instagram API respons
 |---								|------						|		
 |created_time        | 			comment creation time								|
 |text	|						the text of the comment					|
-|from_username|					attribution 							|
-|from_profile_picture|		    attribution pic									|
-|from_id	|					attribution id				 		|
-|from_full_name|				attribution full name							|	
+|from_username|					comment contributor username							|
+|from_profile_picture|		    comment contributorpic									|
+|from_id	|					comment contributor id				 		|
+|from_full_name|				comment contributor full name							|	
 |comment_id|					comment event id						|
 
 |likes data frame|								 variables|
 |--- |--- |
-|username	|		username of liker									|
-|profile_picture	|				 pic of liker							|
-|id |								id of liker			|
-|full_name |						full name of liker						|
+|username	|		the like contributor								|
+|profile_picture	|				the like contributor pic							|
+|id |								the like contributor ID		|
+|full_name |						full name of the like contributor						|
 	
-|users in photo data frame|			|	variables							|
+|users in photo data frame		|	variables							|
 |--- 								|---							|
-|users_in_photo_username|			a user in the photo								|
-|users_in_photo_full_name|			user in photo full name								|	
-|users_in_photo_id|					user in photo id						|
-|users_in_photo_profile_picture|	user in photo pic										|
-|users_in_photo_x_position|			user in photo x pos								|
-|users_in_photo_y_position|			user in photo y pos									|
+|users_in_photo_username|			a user tagged in the photo								|
+|users_in_photo_full_name|			the full name of a user tagged in photo								|	
+|users_in_photo_id|					the id of a user tagged in photo						|
+|users_in_photo_profile_picture|	a pic of the user  tagged in photo										|
+|users_in_photo_x_position|			the x position of the user tagged in photo						|
+|users_in_photo_y_position|			the y position of the user tagged in photo									|
 
